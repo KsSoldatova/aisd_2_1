@@ -1,3 +1,4 @@
+
 #pragma once
 #include <stdio.h>
 #include <iostream>
@@ -75,9 +76,9 @@ public:
 		{
 			print_tree(root->right, 1, level + 2);
 			for (int i = 0; i < level; i++) cout << " ";
-			if (ident == 0) cout <<"Ðº: "<< root->data << "--------------" << endl;
-			if (ident == 1) cout << "Ð¿: "<<root->data << endl;
-			if (ident == -1) cout <<"Ð»: "<< root->data << endl;
+			if (ident == 0) cout <<"ê: "<< root->data << "--------------" << endl;
+			if (ident == 1) cout << "ï: "<<root->data << endl;
+			if (ident == -1) cout <<"ë: "<< root->data << endl;
 			print_tree(root->left, -1, level + 2);
 		}
 	}
